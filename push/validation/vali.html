@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Validation </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="vali.css">
+    </head>
+    <body>
+        <div class="whole">
+            <form name="frmOne" action="" method="post">
+                <p>
+                    Email: <input type="text" name="email" value="" placeholder="Email Address">
+                    <span style="color:red" id="email_error"></span>
+                </p>
+
+                <p>
+                    Payment Options:
+                    <input type="radio" name="payment" value="CC">Credit Card
+                    <input type="radio" name="payment" value="DC">Debit Card
+                    <input type="radio" name="payment" value="PP">PayPal
+                    <span style="color:red" id="radio_error"></span>
+                </p>
+
+                <p>
+                    Where did you hear about us ?
+                    <select name="hear">
+                        <option value="none">None</option>
+                        <option value="paper">Newspaper</option>
+                        <option value="tv">Television</option>
+                        <option value="mouth">Word of Mouth</option>
+                        <option value="search">Search Engine</option>
+                    </select>
+                    <span style="color:red" id="dropdown_error"></span>
+                </p>
+
+                <p>
+                    <label for="cb1">Terms and conditions</label>
+                    <input type="checkbox" name="terms" id="cb1" value="tac">
+                    <span style="color:red" id="checkbox_error"></span>
+                </p>
+
+                <p>&nbsp;</p>
+                <input type="button" value="Submit" onclick="validate()">
+            </form> 
+
+            <script src="vali.js"></script>
+        </div>
+                    
+    </body>
+</html>
